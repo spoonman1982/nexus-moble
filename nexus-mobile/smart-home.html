@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Nexus Online</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/app.css" rel="stylesheet">    
+    <link rel="stylesheet" href="webfonts/ss-symbolicons-block.css">
+
+
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">
+    <link rel="shortcut icon" href="../assets/ico/favicon.png">
+    
+    <style type="text/css">
+      /* To be included with every page that has a footer nav
+      -------------------------------------------------- */
+      html, body { height: 100%; }
+      #wrap { min-height: 100%;  height: auto !important;  height: 100%; margin: 0 auto -80px;     }
+      #push,  #footer {  height: 80px;      }
+      #footer { background: rgba(0,0,0,.8)     }
+     
+    </style>
+   
+
+
+  </head>
+
+  <body >
+  <div id="wrap">  
+    <div class="navbar navbar-inverse navbar-fixed-top green-egg-panel">
+      <div class="navbar-inner">
+        <div class="container">
+          <button data-target=".nav-collapse" data-toggle="collapse" class="btn btn-navbar" type="button">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          
+
+          <a href="#" class="brand">Smart Home</a>
+          <a href="index.html" class="btn btn-navbar btn-home">
+            <span class="icon-home"></span>
+
+          </a>
+
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+                  <li><a href="energy-use.html"><span class="circ ss-icon ss-standard ss-supersize">&#x2607;</span> <span class="nav-label">Energy Use</span></a></li>
+                  <li><a href="history.html"><span class="circ ss-icon ss-standard ss-supersize">&#x1F4C8;</span> <span class="nav-label">History</span></a></li>
+                  <li><a href="smart-home.html"><span class="circ ss-icon ss-standard ss-supersize">&#xEAD0;</span> <span class="nav-label">Smart Home</span></a></li>
+                  <li><a href="settings.html"><span class="circ ss-icon ss-standard ss-supersize">&#x2699;</span> <span class="nav-label">Settings</span></a></li>
+                  <li><a href="login.html"><span class="circ ss-icon ss-standard ss-supersize">&#x1F464;</span> <span class="nav-label">Logout</span></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="wrapper">
+      <div id="content">
+        <div class="container-fluid">
+          <div class="row-fluid">
+            <div class="span12">
+            
+            
+              <div class="widget-box">
+              <div class="widget-title"><h5>Smart Plugs</h5></div>
+              <div class="widget-content">
+               
+               <div class="smart-plug active">
+               <span class="circ ss-icon ss-standard">&#xEAD0;</span>
+               <h3 class="active">Smary Plug 1</h3>
+               <div class="btn-group utility-nav">
+                    <button class="btn active">On</button>
+                    <button class="btn">Off</button>
+                </div>
+               </div>
+
+                <div class="smart-plug">
+               <span class="circ ss-icon ss-standard">&#xEAD0;</span>
+               <h3>Smary Plug 2</h3>
+               <div class="btn-group utility-nav">
+                    <button class="btn">On</button>
+                    <button class="btn active">Off</button>
+                </div>
+               </div>
+      
+              </div>
+              </div>
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="push"></div>
+    </div>
+     <div id="footer">
+      <div class="container">
+          <ul class="footer-nav thirds">
+               <li><a href="smart-home.html" class="active" ><span class="circ ss-icon ss-standard ss-supersize">&#xEAD0;</span> <span class="nav-label">Smart Plugs</span></a></li>
+                  <li><a href="smart-solar.html" ><span class="circ ss-icon ss-standard ss-supersize">&#x2600;</span> <span class="nav-label">Solar</span></a></li>
+                  <li><a href="smart-heat.html"  ><span class="circ ss-icon ss-standard ss-supersize">&#x26FD;</span> <span class="nav-label">Heat Pump</span></a></li>
+           </ul>
+       </div>
+    </div>
+
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.backstretch.min.js"></script>
+    
+    <script>
+         $.backstretch("img/bgs/bg2.png");
+    </script>
+    <script>                      
+    $(function(){
+    $('[rel=popover]').popover({ 
+    html : true, 
+    content: function() {
+    return $('#popover_content_wrapper').html();
+    }
+    });
+    });
+    </script>
+
+  </body>
+</html>
